@@ -1,0 +1,8 @@
+Page\HomePage.class
+Page\RegisterPage.class
+Page\ForgotPasswordPage.class
+DriverForBrowser.class
+Page\ProfilePage.class
+Page\LoginPage.class
+DeleteRegisterUsers.class
+Constants.class
