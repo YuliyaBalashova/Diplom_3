@@ -1,5 +1,4 @@
 import Page.HomePage;
-import Utils.Constants;
 import Utils.DriverForBrowser;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;

@@ -1,5 +1,4 @@
 import Page.*;
-import Utils.Constants;
 import Utils.DeleteRegisterUsers;
 import Utils.DriverForBrowser;
 import io.qameta.allure.junit4.DisplayName;
