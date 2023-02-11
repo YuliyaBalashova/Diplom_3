@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TransitionToConstructionTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.965 s - in TransitionToConstructionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.385 s - in TransitionToConstructionTest

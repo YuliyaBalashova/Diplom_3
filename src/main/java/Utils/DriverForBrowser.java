@@ -1,20 +1,19 @@
+package Utils;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverForBrowser {
-
-public static WebDriver defineBrowser(String browser){
-
-    WebDriver driver = null;
-
+    static WebDriver driver;
+    public static WebDriver getDriver(){
+        return driver = DriverForBrowser.defineBrowser(Constants.YANDEX);
+    }
+    public static WebDriver defineBrowser(String browser){
     if (browser.equals(Constants.CHROME)){
         driver = new ChromeDriver();
     } else if(browser.equals(Constants.YANDEX)){
         System.setProperty("webdriver.chrome.driver","C:\\WebDriver\\bin\\yandexdriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.setBinary("C:\\Users\\ybala\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe");
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
     }
     return driver;
 }

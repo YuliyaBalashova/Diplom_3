@@ -50,8 +50,14 @@ public class HomePage {
     }
 
     // проверка видимости кнопки Оформить заказ
-    public void visualButtonPlaceOrder() {
-        driver.findElement(buttonPlaceOrder).isEnabled();
+    public boolean visualButtonPlaceOrder() {
+        boolean actual;
+        if (driver.findElement(buttonPlaceOrder).isEnabled()){
+            actual = true;
+        } else {
+            actual = false;
+        }
+        return actual;
     }
 
     // клик на кнопку Личный кабинет

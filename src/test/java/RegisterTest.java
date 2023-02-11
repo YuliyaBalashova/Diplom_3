@@ -1,4 +1,7 @@
 import Page.*;
+import Utils.Constants;
+import Utils.DeleteRegisterUsers;
+import Utils.DriverForBrowser;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -7,11 +10,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 
-import java.sql.Driver;
-
 @RunWith(Parameterized.class)
 public class RegisterTest {
-    WebDriver driver = DriverForBrowser.defineBrowser(Constants.YANDEX);
+    WebDriver driver = DriverForBrowser.getDriver();;
     private final String name;
     private final String email;
     private final String password;

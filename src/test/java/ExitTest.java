@@ -2,6 +2,9 @@ import Page.HomePage;
 import Page.LoginPage;
 import Page.ProfilePage;
 import Page.RegisterPage;
+import Utils.Constants;
+import Utils.DeleteRegisterUsers;
+import Utils.DriverForBrowser;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -9,7 +12,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
 public class ExitTest {
-    private WebDriver driver = DriverForBrowser.defineBrowser(Constants.YANDEX);
+    private WebDriver driver = DriverForBrowser.getDriver();;
 
     //объект класса главной страницы
     HomePage objHomePage = new HomePage(driver);

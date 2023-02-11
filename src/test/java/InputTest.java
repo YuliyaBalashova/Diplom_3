@@ -1,4 +1,7 @@
 import Page.*;
+import Utils.Constants;
+import Utils.DeleteRegisterUsers;
+import Utils.DriverForBrowser;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -10,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 @RunWith(Parameterized.class)
 public class InputTest {
-    private WebDriver driver = DriverForBrowser.defineBrowser(Constants.YANDEX);
+    private WebDriver driver = DriverForBrowser.getDriver();
 
     private final String name;
     private final String email;
@@ -84,7 +87,7 @@ public class InputTest {
         objHomePage.waitForLoadHomePageWithAuth();
 
         // проверка видимости кнопки Оформить заказ
-        objHomePage.visualButtonPlaceOrder();
+        Assert.assertTrue(objHomePage.visualButtonPlaceOrder());
     }
 
     @Test
@@ -106,7 +109,7 @@ public class InputTest {
         objHomePage.waitForLoadHomePageWithAuth();
 
         // проверка видимости кнопки Оформить заказ
-        objHomePage.visualButtonPlaceOrder();
+        Assert.assertTrue(objHomePage.visualButtonPlaceOrder());
     }
 
     @Test
@@ -128,7 +131,7 @@ public class InputTest {
         objHomePage.waitForLoadHomePageWithAuth();
 
         // проверка видимости кнопки Оформить заказ
-        objHomePage.visualButtonPlaceOrder();
+        Assert.assertTrue(objHomePage.visualButtonPlaceOrder());
     }
 
     @Test
@@ -150,7 +153,7 @@ public class InputTest {
         objHomePage.waitForLoadHomePageWithAuth();
 
         // проверка видимости кнопки Оформить заказ
-        objHomePage.visualButtonPlaceOrder();
+        Assert.assertTrue(objHomePage.visualButtonPlaceOrder());
     }
 
     @After

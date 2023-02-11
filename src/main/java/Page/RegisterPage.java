@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPage {
-
     private WebDriver driver;
 
     private By fieldName = By.xpath(".//form/fieldset[1]/div/div/input");  // поле Имя
